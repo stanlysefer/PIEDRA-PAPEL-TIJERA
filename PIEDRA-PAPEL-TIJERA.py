@@ -56,6 +56,3 @@ if(jugador<3):
 
 # output
 print(rta)
-
-
-
