@@ -7,6 +7,9 @@ import random
 print("----------------------------------------------")
 print("---------JUEGO PIEDRA PEPEL O TIJERA----------")
 print("----------------------------------------------")
+print("-----------------piedra=1---------------------")
+print("-----------------papel=2----------------------")
+print("-----------------tijera=3---------------------")
 
 # processing
 
@@ -29,30 +32,28 @@ if (maquina==1):#piedra
 
 
 if (maquina==2):#papel
-        if (jugador==1):#piedra
-            rta="---perdiste  jajaja"
-        elif (jugador==2):#papel
-            rta= "vaya vaya fue un empate"
-        elif (jugador==3):#tijera
-            rta= "ganaste  wow"
+    if (jugador==1):#piedra
+        rta="---perdiste  jajaja"
+    elif (jugador==2):#papel
+        rta= "vaya vaya fue un empate"
+    elif (jugador==3):#tijera
+        rta= "ganaste  wow"
 
 
 if (maquina==3):#tijera
-        if(jugador==1):#piedra
-            rta="ganaste  wow"
-        elif(jugador==2):#papel
-            rta="---perdiste  jajaja"
-        elif(jugador==3):#tijera
-            rta="vaya vaya fue un empate"
+    if(jugador==1):#piedra
+        rta="ganaste  wow"
+    elif(jugador==2):#papel
+        rta="---perdiste  jajaja"
+    elif(jugador==3):#tijera
+        rta="vaya vaya fue un empate"
 
 
     
 if (jugador>3):
     rta = "¡¡¡USTED DIGITÓ UN NÚMERO NO VALIDO!!!"
 
-if(jugador<3):
-    rta=print("la maquina saco: " +str(maquina))
-    rta=print("usted saco: " +str(jugador))
-
 # output
 print(rta)
+print("la maquina saco: " +str(maquina))
+print("usted saco: " +str(jugador))
